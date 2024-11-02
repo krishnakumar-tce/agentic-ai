@@ -1,0 +1,20 @@
+tools:
+  tool_weather_forecast:
+    description: "Get weather forecast for a location and dates. Call ONCE at the start of planning. Returns daily weather conditions and temperatures."
+  
+  tool_places:
+    description: "Find attractions and places of interest. Call AFTER getting weather data. Returns list of places with ratings and details."
+  
+  tool_currency:
+    description: "Convert prices between currencies. Call LAST after finding places. Converts from EUR to specified currency."
+  
+  # Triage Tools
+  transfer_to_agent_trip_planner:
+    class: extensions.triage.tool.TriageTool
+    description: Transfer to trip planner agent for travel planning assistance
+    schema: {}  # Keep empty schema for triage tools
+  
+  transfer_to_unsupported:
+    class: extensions.triage.tool.TriageTool
+    description: "Use this when the user's request cannot be handled by any available agent"
+    schema: {}  # Keep empty schema for triage tools

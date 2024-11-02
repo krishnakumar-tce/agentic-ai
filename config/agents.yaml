@@ -1,0 +1,27 @@
+agents:
+  agent_triage:
+    class: BaseAgent
+    name: "Triage Agent"
+    tools:
+      - transfer_to_agent_trip_planner
+      - transfer_to_unsupported
+    instructions: |
+      You are a triage agent that routes requests to specialized agents.
+
+      Your role is to:
+      1. Analyze user requests and determine what they need
+      2. Look at your available tools (these are transfer_to_* functions)
+      3. Choose the most appropriate agent to handle the request
+      4. If no agent can handle the request, use transfer_to_unsupported
+
+      IMPORTANT: You MUST ALWAYS use one of your transfer tools.
+
+  agent_trip_planner:
+    class: BaseAgent
+    name: "Trip Planner"
+    tools:
+      - tool_weather_forecast
+      - tool_places
+      - tool_currency
+    instructions: |
+      You are a travel planning assistant...
