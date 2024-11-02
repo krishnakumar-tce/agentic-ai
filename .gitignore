@@ -18,7 +18,7 @@ ENV/
 # Ignore all .env files anywhere in the project
 **/.env
 # Ignore any variations of .env files
-**/.env.*
+**/.env
 
 # IDE
 .vscode/
