@@ -3,6 +3,8 @@
 A Python-based multi-agent system for travel planning using OpenAI's GPT-4o-mini model.
 Included an example to show a trip planning assistant with two agents and three tools.
 
+![Agentic AI Blueprint](agentic_ai.png)
+
 ## Quick Start Guide
 
 - Agents and Tools are configured completely through YAML definitions without any code.
