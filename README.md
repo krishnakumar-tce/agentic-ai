@@ -8,9 +8,11 @@ Includes an example to show a trip planning assistant with two agents and three 
 ## Quick Start Guide
 
 - Agents and Tools are configured completely through YAML definitions without any code.
+- Agents and Tools are loaded dynamically at runtime into the registry from the YAMLs and made available to the application.
+- Supports multi-turn conversations with seamless handover of a single task between agents and multiple tools within an agent
+- Supports parallel tool calls when solving a task requires parallel agent+tool executions
 - Write code only to implement your tool's functionality using a single "execute" method inside service.py within your tool's folder.
 - There is no need to subclass the Agent or Tool base classes.
-- Agents and Tools are loaded dynamically at runtime into the registry from the YAMLs and made available to the application.
 - See example to follow along and implement your own agents and tools.
 
 ### Adding a New Agent with Triage Integration
