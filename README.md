@@ -1,7 +1,7 @@
 # Agentic AI System
 
-A Python-based multi-agent system for travel planning using OpenAI's GPT-4o-mini model.
-Included an example to show a trip planning assistant with two agents and three tools.
+A Python-based multi-agent orchestration framework compatible with OpenAI's GPT4+ models.
+Includes an example to show a trip planning assistant with two agents and three tools.
 
 ![Agentic AI Blueprint](agentic_ai.png)
 
